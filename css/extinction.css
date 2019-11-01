@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Chilanka|Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+/*extinction.html animals*/
+button.parrot, button.parrot a {
+    color: #0FFD;
+    font-family: 'Pacifico', cursive;
+}

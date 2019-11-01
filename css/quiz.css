@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Chilanka|Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+/*Quiz style*/
+
+
+#contact-us {
+    position: absolute;
+    top: 10vh;
+}
+#feedback {
+    position: absolute;
+    top: 35vh;
+}
+
+
+#feedback-1 {
+    margin-top: 7em;
+    margin-right: 1em;
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    display: block;
+    width: 100%;
+    margin-left: 5em;
+    display: flex;
+    margin-bottom: 1em;
+    align-items: center;
+    padding: 10px;
+}
+#comment {
+    margin-top: 3em;
+    margin-left:2em;
+}
+#question{
+    margin-top: 3em;
+    padding: 1em 3em;
+    border: 0;
+    border-radius: 10px;
+    background: white;
+    display: block;
+    width: 80%;
+    height: 50%;
+    margin-left: 5em;
+    /**/
+    position: absolute;
+    top: 125vh;
+    height: 625% !important;
+    margin-bottom: 5vh;
+}
+#question h3{
+    padding: 1.1em;
+    font-size:1.2em;
+    margin-top: 3em;
+    text-shadow: black 1px 1px 0;
+}
+#question p{
+    font-size:2em;
+    color:red;
+    font-weight:bold;
+}
+
+#question button{
+    margin-left:20em;
+    margin-top:10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    background: black;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    background: linear-gradient(-90deg, #4af7af 0%, #12c739 51%, #88f71f 75%);
+    cursor: pointer;
+    display: block;
+    float: right;
+}
+
+input[type=text], textarea {
+    box-shadow: rgba(0,0,0,0.15) 3px 3px 5px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 15px;
+    width: 50em;
+    font-size: 0.9em;
+}
+input[type=radio]{
+    width:20px;
+    height:5px;
+    margin-left:1.3em;
+    padding-top: 3em 1em;
+    
+}
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 0.5em 1em;
+    margin: 0 -1em;
+    border-radius: 10px;
+    background: black;
+    color: white;
+    background: linear-gradient(141deg, #4ab7f7 0%, #db5b1f 51%, #e8f71f 75%);
+}
+
+#submit {
+    font-weight: bold;
+    font-size: 1em;
+    background: black;
+    padding: 0.5em 1em;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(-90deg, rgb(4, 0, 255), rgb(0, 204, 255));
+    cursor: pointer;
+    float: right;
+    margin:1em;
+    margin-top:8em;
+}
+
+fieldset > label {
+    font-weight: bold;
+    width: 10%;
+    padding-right: 2em;
+    text-align: right;
+    text-shadow: rgba(0,0,0,0.3) 3px 3px 5px;
+}
+
+label.error {
+	color: red;
+}
+
+#rabbit img{
+    max-width:430px;
+    margin-left:12em;
+    float: right;
+    margin-top:3em;
+}
+#social-media{
+    display: inline-block;
+}
+#social-media img{
+    padding: 1px;
+    margin-left: 7.5em;
+    max-width: 70px;
+    margin-top:3em;
+}
+
+#contact-us h1{
+    font-size: 3em;
+    margin-left: 1.4em;
+    margin-top: 0.5em;
+    font-weight: bold;
+    font-family: 'ZCOOL KuaiLe', cursive;
+    letter-spacing: 8px;
+    padding-top:100px;
+}
+#contact-us h1::first-letter{
+    color: rgb(255, 72, 0);
+}
+#contact-us p{
+    font-size: 1.5em;
+    margin-left: 6.5em;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+}
+
+#contact-us figure{
+	margin: 0;
+	padding: 0.75em;
+	margin-bottom: 1em;
+    transform : scale(0);
+}
+#contact-us figure.change{
+    transform: scale(1);
+    transition: transform 2s ease;
+}
+
+#ins-information-popup{
+    position: fixed;
+    top: 5em;
+    left:5em;
+	background:white;
+    border: 2px solid black;
+    width: 50%;
+    height:50%;
+	transition: all 0.5s ease;
+	visibility: hidden;
+    opacity: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 4em;
+}
+
+#ins-information-popup img{
+    margin-top: 3em;
+    max-width: 220px;
+    float: right;
+    margin-right: 1em;
+}
+
+#ins-information-popup .close-button a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+    text-transform: uppercase;
+}
+
+#ins-information-popup .close-button a:before{
+    content: "\2716";
+    padding-right: 5px;
+}
+
+body.show-ins-information-popup{
+    overflow: hidden;
+}
+
+body.show-ins-information-popup #ins-information-popup{
+    visibility: visible;
+    opacity: 1;
+}
+
+#facebook-information-popup{
+    position: fixed;
+    top: 5em;
+    left: 5em;
+	background:white;
+    border: 2px solid black;
+    width: 50%;
+    height:50%;
+	transition: all 0.5s ease;
+	visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+    padding-top: 4em;
+}
+
+#facebook-information-popup img{
+    margin-top: 4em;
+    max-width: 220px;
+    float: left;
+    padding-right: 1.3em;
+    margin-left: 1em;
+}
+
+#facebook-information-popup .close-button a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0.5em;
+    text-transform: uppercase;
+}
+
+#facebook-information-popup .close-button a:before{
+    content: "\2716";
+    padding-right: 5px;
+}
+
+body.show-facebook-information-popup{
+    overflow: hidden;
+}
+
+body.show-facebook-information-popup #facebook-information-popup{
+    visibility: visible;
+    opacity: 1;
+}
+
+#ins-information-popup p, #facebook-information-popup p{
+    font-size: 1.2em;
+    margin-left: 6.5em;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 4px;
+    margin-top:2em;
+}
+
+#contact-us {
+    /*margin-top:10em;*/
+    width:100%;
+}

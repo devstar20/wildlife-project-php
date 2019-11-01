@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Chilanka|Germania+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan|Germania+One|Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #EEE;
+    position: relative;
+}
+/*index.html (animation page) button at bottom*/
+.start {
+    /*margin:10px 0 20px 40%;*/
+/*    text-decoration: none;
+    color: #FFF;
+    position: relative;
+    top: 18vh;
+    left: 45vw;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    background-color: #222;
+    border: 2px solid #111;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;*/
+    font-family: 'Chilanka', cursive;
+}
+
+/*.start:hover, .start:active, .start:focus {
+    background-color: #333;
+    box-shadow: 1px 1px 10px #333,-1px -1px 10px #444;
+}*/
+/*Navigation bar*/
+header {
+    background: #666;
+    display: flex;
+    width: 90vw;
+    position: relative;
+    top: 3vh;
+    margin: 0 auto;
+    align-items: center;
+    z-index: 100;
+    border-radius: 20px;
+    animation: navbar 1 ease-in-out;
+    animation-duration: .8s;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes navbar {
+	0% {
+        right: -100vw;
+        transform: scale(0) rotateY(0deg);
+        visibility: visible;
+    }
+    100% {
+        right: 0vw;
+        transform: scale(1.1) rotateY(-360deg);
+        width: 80%;
+        margin: 0 auto;
+        visibility: visible;
+    }
+}
+
+#logo {
+    width: 20%;
+    padding: .5% 0;
+}
+
+#logo img {
+    width: 15vw;
+    position: relative;
+    left: 2vw;
+}
+#help1 {background: #666;width: 0%;}
+header nav {
+    background: #666;
+    width: 80%;
+    /*padding: 4% 0;*/
+    display: flex;
+    justify-content: center/*flex-end*/;
+}
+
+header nav ul {
+	display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 1px 0 2px 0;
+	margin: 0 2em 0 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 1.2em;
+    /*font-weight: 800;*/
+	transition: all .2s;
+    transition-timing-function: linear;
+    /*background-image: -webkit-linear-gradient(left,#00F 0%,#0A0 100%);
+    -webkit-background-clip: text;
+    color: #08F;
+    background-size: 200% 100%;
+    animation: shine 4.25s linear infinite;*/
+}
+header nav ul li:nth-child(1) a {color: #0FF;}
+header nav ul li:nth-child(2) a {color: #FF0;}
+header nav ul li:nth-child(3) a {color: #F40;}
+header nav ul li:nth-child(4) a {color: #FFF;}
+header nav ul li:nth-child(5) a {color: #0F0;}
+header nav ul li:nth-child(6) a {color: violet;}
+/*The rainbow abandoned
+@keyframes shine {
+    0% {background-position: 0 0;}
+    100% {background-position: 100% 0;}
+}
+*/
+header nav ul li a:hover {box-shadow: inset 0 -4px 0 0 #333;}
+/*Probably abandoned
+#form {
+    width: 25%;
+    display: flex;
+    background: rgba(200,255,200,1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#form #user {
+    padding: 1% 2% 0 0;
+    width: 100%;
+    float: right;
+}
+
+#form #pw {
+    padding: 1% 2% 0 0;
+    width: 100%;
+}
+
+#form #login {
+    padding: 1% 2% 0 0;
+}
+*/
+/*leader.html loading gif*/
+#loading {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+    background: #BBB url(../images-leader/loading-horse.gif) center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 101;
+	left: 0;
+	top: 0;
+	transition: all 1s ease; /* Transition anything that's changed */
+}
+body.loaded #loading {
+	opacity: 0;
+	visibility: hidden; /* Good practice to include as a fallback to opacity */
+}
+/*leader.html scroll images*/
+.scroll-slide {
+    height: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);/*advanced browser & use GPU (3D)*/
+    left: 0;
+    top: 10vh;
+}
+.scroll-slide > div {
+    height: 100%;
+    width: 7970px;
+    background: transparent/*url(http://www.webhek.com/wordpress/wp-content/uploads/2018/03/collage.jpg)*/;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate3d(0, 0, 0);/*advanced browser & use GPU (3D)*/
+}
+.scroll-slide .scroll-1 {
+    animation: scrollSlide 60s linear infinite;
+}
+.scroll-slide .scroll-2 {
+    opacity: 0;
+    transition: opacity .3s linear;
+    /*background-position: 0 -200px;*/
+    animation: scrollSlide 30s linear infinite;
+}
+.scroll-slide > div img {height: 200px;}
+.scroll-slide:hover .scroll-2 {opacity: 1;}
+@keyframes scrollSlide {
+    100% {transform: translateX(-50%);}
+}
+
+/*extinguish style*/
+.extinguish-section {
+    position: relative;
+    margin: 12vh 0 0 0;
+}
+
+.grass-img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.farmer-talk-img {
+    position: absolute;
+    top: 250px;
+    left: 540px;
+
+}
+
+.parrot-talk-img {
+    position: absolute;
+    top: 10px;
+    left: 960px;
+
+}
+
+.fire-img {
+    position: absolute;
+    top: 369px;
+    left: 0;
+    width: 65%;
+    height: 200px;
+}
+
+.farmer-img {
+    position: absolute;
+    top: 255px;
+    left: 740px;
+
+}
+
+.parrot-img {
+    position: absolute;
+    top: 150px;
+    left: 980px;
+
+}
+
+.smoke-img1 {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+}
+.smoke-img2 {
+    position: absolute;
+    top: 200px;
+    left: 140px;
+}
+.smoke-img3 {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    z-index: 0
+}
+
+.table-under-image {
+    display: block;
+    border: 1px solid #333333;
+    padding: 10px;
+}
+
+table{
+    border: 1px solid #000000;
+    padding: 7px;
+    margin: 0 300px;
+}
+
+table tr {
+
+}
+
+table tr td{
+    border: 1px solid #333;
+}
+
+.parrot-talk-p {
+    position: absolute;
+    top: 70px;
+    left: 1013px;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.farmer-talk-p {
+    position: absolute;
+    top: 300px;
+    left: 590px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.farmer-talk-p {
+    animation: cssAnimation 0s 7.5s forwards, fadein 4s;
+    visibility: hidden;
+}
+
+
+@keyframes cssAnimation {
+    to   { visibility: visible;  }
+}
+
+@keyframes fadein {
+    0%   {opacity: 0;}
+    10%  {opacity: .1;}
+    20%  {opacity: .2;}
+    30%  {opacity: .3;}
+    40% {opacity: .4;}
+    50% {opacity: .5;}
+    60% {opacity: .6;}
+    70% {opacity: .7;}
+    80% {opacity: .8;}
+    90% {opacity: .9;}
+    100% {opacity: 1;}
+}
+
+.fire-img {
+    animation: cssAnimation 0s 2.5s forwards, fadein 4s;
+    visibility: hidden;
+}
+
+.smoke-img3 {
+    animation: cssAnimation 0s 3s forwards, fadein 4s;
+    visibility: hidden;
+}
+.smoke-img2 {
+    animation: cssAnimation 0s 3.3s forwards, fadein 4s;
+    visibility: hidden;
+}
+.smoke-img1 {
+    animation: cssAnimation 0s 3.8s forwards, fadein 4s;
+    visibility: hidden;
+}
+
+@keyframes cssAnimation {
+    to   { visibility: visible;  }
+}
+
