@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Homepage</title>
+        <link rel="icon" href="reindeer.png" type="image/png">
+        <link rel="stylesheet" href="index_puzzle/css/stylehomepage.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran|Concert+One|Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id = "background">
+        <p id= "forest">
+            <img src="index_puzzle/images/forest.png" alt="forest" width="1000", height="600">
+        </p>
+        <p id = "deforest">
+            <img src="index_puzzle/images/deforest.png" alt="deforest" width="1000", height="600">
+        </p>
+        <p id ="desert">
+            <img src="index_puzzle/images/desert.png" alt ="desert" width ="1000", height="600">
+        </p>
+        <p id="dead">
+            <img src = "index_puzzle/images/dead.png" alt = "dead" width = "1000", height="600">
+        </p>
+        </div>
+        <p class="container"></p>
+        <section class="cloud">
+            <p class="clouds-1"></p>
+            <p class="clouds-2"></p>
+            <p class="clouds-3"></p>
+            <p class="clouds-4"></p>
+            <p class="clouds-5"></p>
+        </section>
+        <section class="rainbow">
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+            <p class="rainbow-colour"></p>
+        </section>
+        <section class="rabbit animated">
+            <p class="head">
+                <p class="ear"></p>
+                <p class="ear"></p>
+            </p>
+        </section>
+        <section class="flower">
+            <p class="petal-1">
+                <img src = "index_puzzle/images/flower.png" alt="flower" width="32", height="32">
+            </p>
+            <p class="petal-2">
+                <img src = "index_puzzle/images/flower.png" alt="flower" width="32", height="32">
+            </p>
+            <p class="petal-3">
+                <img src = "index_puzzle/images/flower.png" alt="flower" width="32", height="32">
+            </p>
+        </section>
+        <a href="leader.html" class="start">Start The Journey</a>
+    </body>
+    <script src="index_puzzle/js/jquery-1.9.1.min.js"></script>
+    <script src="index_puzzle/js/jquery.js"></script>
+    <script src="index_puzzle/js/homepage.js"></script>
+</html>
