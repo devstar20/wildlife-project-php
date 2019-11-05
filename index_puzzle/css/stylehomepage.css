@@ -1,0 +1,409 @@
+#forest img{
+    display: flex;
+    justify-content: center;
+    margin: 110px;
+    padding-left:80px; 
+    z-index: 4;
+}
+
+#deforest img {
+    display: flex;
+    justify-content: center;
+    margin: 110px;
+    padding-left: 80px;
+    z-index: 3;
+}
+#desert img {
+    display: flex;
+    justify-content: center;
+    margin: 110px;
+    padding-left: 80px;
+    z-index: 2;
+}
+#dead img {
+    display: flex;
+    justify-content: center;
+    margin: 110px;
+    padding-left: 80px;
+    z-index: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+    cursor:url("../images/menghuan.ico"),auto;
+}
+.draw {
+    position: fixed;
+    width: 1px;
+    line-height: 1px;
+    pointer-events: none;
+}
+
+@keyframes floatOne {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate3D(0, -20px, 0) scale(5) rotate(45deg);
+    }
+}
+*,
+*:before,
+*:after {
+    transition: 4s ease;
+    position: absolute;
+}
+.container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+.rainbow {
+    margin-bottom: 100px;
+    width: 600px;
+    height: 270px;
+    left: 500px;
+    bottom: 82px;
+    left: 70%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    animation: first 20s infinite;
+    z-index: 6;
+}
+.rainbow.animated {
+    visibility: visible;
+    animation: rainbow 8s linear;
+}
+.rainbow .rainbow-colour {
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+    transform-origin: 0 100%;
+    bottom:0;
+    border-bottom: 0 !important;
+}
+.rainbow .rainbow-colour:nth-child(1) {
+    border: 10px solid #ac01fd;
+    height: 100%;
+    width: 100%;
+}
+.rainbow .rainbow-colour:nth-child(2) {
+    border: 10px solid #511ce0;
+    height: 261px;
+    width: 581px;
+}
+.rainbow .rainbow-colour:nth-child(3) {
+    border: 10px solid #1a9fe2;
+    height: 252px;
+    width: 562px;
+}
+.rainbow .rainbow-colour:nth-child(4) {
+    border: 10px solid #5ed81d;
+    height: 243px;
+    width: 543px;
+}
+.rainbow .rainbow-colour:nth-child(5) {
+    border: 10px solid #f8f52a;
+    height: 234px;
+    width: 524px;
+}
+.rainbow .rainbow-colour:nth-child(6) {
+    border: 10px solid #f7a528;
+    height: 225px;
+    width: 505px;
+}
+.rainbow .rainbow-colour:nth-child(7) {
+    border: 10px solid #f63b2a;
+    height: 216px;
+    width: 486px;
+}
+
+@keyframes rainbow {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    20% {
+        opacity: 0.6;
+    }
+    30% {
+        opacity: 0.5;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60% {
+        opacity: 0.2;
+    }
+    70% {
+        opacity: 0;
+    }
+}
+
+@keyframes first {
+    0% {
+        opacity: 1;
+    }
+    5% {
+        opacity: 0.9;
+    }
+    10% {
+        opacity: 0.7;
+    }
+    15% {
+        opacity: 0.5;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    25%, 30%, 40%, 50%, 60%,70%,80%,90%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+.clouds-1 {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    bottom:170px;
+    left: 250px;
+    border-radius: 80px;
+    animation: clouds 10s linear infinite;
+    z-index: 99;
+    animation: rainbow 15s infinite;
+}
+
+.clouds-2 {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    bottom:300px;
+    left: 350px;
+    border-radius: 80px;
+    animation: clouds 10s linear infinite;
+    z-index: 99;
+}
+
+.clouds-3 {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    bottom:165px;
+    left: 850px;
+    border-radius: 80px;
+    animation: clouds 6s linear infinite;
+    z-index: 99;
+    animation: rainbow 10s infinite;
+}
+
+.clouds-4 {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    bottom:152px;
+    left: 750px;
+    border-radius: 80px;
+    animation: clouds 7s linear infinite;
+    z-index: 99;
+    animation: rainbow 15s infinite;
+}
+.clouds-5 {
+    background-color: white;
+    width: 90px;
+    height: 30px;
+    bottom:400px;
+    left: 657px;
+    border-radius: 80px;
+    animation: clouds 10s linear infinite;
+    z-index: 99;
+}
+@keyframes clouds {
+    50% {
+        transform: translateX(10px);
+    }
+    70% {
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+.flower {
+    width: 12px;
+    height: 12px;
+    top: 520px;
+    left: 420px;
+    transform-origin: 50%;
+}
+
+.flower-in {
+    z-index:2;
+    width:100%;
+    height:100%;
+    border-radius: 100px;
+}
+
+.flower .petal-1{
+    z-index: 1;
+    width: 36px;
+    height: 12px;
+    left: 220px;
+    top:-63px;
+}
+
+.flower .petal-2 {
+    z-index: 1;
+    top: 0%;
+    left: 720px;
+    top:-30px;
+}
+
+.flower .petal-3 {
+    z-index: 1;
+    top: 0%;
+    left: 620px;
+    top:-20px;
+}
+
+.flower.animated {
+    animation: 11s;
+    visibility: visible;
+}
+
+@keyframes floweropen{
+    0% {
+		transform: scale(0.6);
+	}
+	20% {
+		transform: scale(1);
+    }
+    30% {
+        transform: scale(0.8);
+    }
+	40% {
+		transform: scale(0.6);
+    }
+    50% ,80%, 100%  {
+        transform: scale(1);
+    }
+    60% ,90%{
+        transform: scale(0.7);
+    }
+    
+}
+.flower .petal-1{
+	animation-name: floweropen;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation: first 20s infinite;
+}
+.flower .petal-2{
+	animation-name: floweropen;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation: first 20s infinite;
+}
+.flower .petal-3    {
+	animation-name: floweropen;
+	animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation: first 20s infinite;
+}
+
+#forest img {
+    animation: first 20s infinite;
+}
+
+@keyframes second {
+    0%, 10%, 15%{
+        opacity: 0;
+    }
+    26%{
+        opacity: 1;
+    }
+    35% {
+        opacity: 0.9;
+    }
+    40% {
+        opacity: 0.7;
+    }
+    45% {
+        opacity: 0.4;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    55%, 60%, 65%, 70% ,80%, 90%, 100% {
+        opacity: 0;
+    }
+}
+
+#deforest {
+    animation: second 20s infinite;
+}
+
+@keyframes third {
+    0%, 10%, 15%, 20%, 25%, 30%, 40%, 45%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0.9;
+    }
+    65%{
+        opacity: 0.7;
+    }
+    70%{
+        opacity: 0.4;
+    }
+    75%, 80%, 90%, 100%{
+        opacity: 0;
+    }
+}
+
+@keyframes four {
+    0%, 10%, 15%, 20%, 25%, 30%, 40%, 45%, 50%, 60%, 65%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    85% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+#desert {
+    animation: third 20s infinite;
+}
+
+#dead {
+    animation: four 20s infinite;
+    
+}
+
